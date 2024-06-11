@@ -41,15 +41,11 @@ const classes = {
 const initialData = {
   name: 'Send email to Adrian',
   description: 'Confirm if you have passed the subject\nHereby ...',
-  done: true,
-  recurrence: 'Daily',
-  rating: 3,
 };
 
 const renderers = [
   ...materialRenderers,
   //register custom renderers
-  { tester: ratingControlTester, renderer: RatingControl },
 ];
 
 export const JsonFormsDemo: FC = () => {
